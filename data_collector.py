@@ -14,7 +14,7 @@ for label in labels:
     os.makedirs(img_path)
 
     #open camera 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     print(f"Collecting images for {label}")
     time.sleep(3)
 
