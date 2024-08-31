@@ -84,7 +84,8 @@ class TrainPipeline:
             
             if data_validation_artifacts.validation_status ==True:
                 model_trainer_artifacts =self.start_model_trainer()
-            
+            else:
+                raise Exception("your data is not correct format")
         
         
         except Exception as e:
